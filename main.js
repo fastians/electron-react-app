@@ -14,6 +14,7 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
+      webSecurity: false, // Allow loading resources from localhost
     },
   });
 
@@ -24,9 +25,9 @@ function createWindow() {
   mainWindow.on("closed", () => {
     mainWindow = null;
     // Kill the Python process when the Electron app is closed
-    if (pythonProcess) {
-      pythonProcess.kill();
-    }
+    // if (pythonProcess) {
+    //   pythonProcess.kill();
+    // }
   });
 
   // Start the Python backend when Electron app is ready
