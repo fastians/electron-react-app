@@ -13,6 +13,9 @@ dist-ssr
 *.local
 dist
 release
+
+backend/env
+backend/__*
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

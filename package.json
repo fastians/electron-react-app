@@ -23,7 +23,17 @@
     "files": [
       "dist/**/*",
       "main.js",
-      "package.json"
+      "package.json",
+      "backend/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "backend/",
+        "to": "backend/",
+        "filter": [
+          "**/*"
+        ]
+      }
     ],
     "directories": {
       "output": "release"
